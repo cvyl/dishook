@@ -6,6 +6,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+     NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
     permissions:
       contents: read
       packages: write
@@ -20,5 +22,3 @@ jobs:
           scope: '@ly-nld'
       - run: npm ci
       - run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
