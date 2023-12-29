@@ -23,8 +23,8 @@ class Webhook {
         return this;
     }
     addEmbed(embed) {
-        var _a;
-        (_a = this.embeds) === null || _a === void 0 ? void 0 : _a.push(embed.toObject());
+        if (typeof this.content === 'undefined')
+            this.embeds = [embed.toObject()];
         return this;
     }
     setTTS(tts) {
