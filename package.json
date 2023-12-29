@@ -1,6 +1,6 @@
 {
   "name": "@ly-nld/dishook",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Simple Discord Webhook Wrapper",
   "repository": {
     "type": "git",
