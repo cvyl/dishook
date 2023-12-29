@@ -1,0 +1,51 @@
+{
+  "name": "@ly-nld/dishook",
+  "version": "1.0.0",
+  "description": "Simple Discord Webhook Wrapper",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build:ts": "tsc --build",
+    "build:docs": "typedoc --out docs src/index.ts",
+	"build:pack": "npm run build:ts && npm run build:docs && npm pack",
+    "build:all": "npm run build:ts && npm run build:docs",
+	"build": "npm run build:all && npm run build:pack",
+    "lint": "eslint --ext .ts src",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "prettier --write .",
+	"test:node": "node test/index.js",
+	"test:ts": "tsc --noEmit test.ts",
+	"test": "npm run test:node && npm run test:ts"
+  },
+
+  "keywords": [
+    "discord",
+    "webhook",
+    "discord-webhook",
+    "discord-webhook-wrapper",
+    "discord-webhook-ts",
+    "discord-webhook-typescript",
+    "dishook"
+  ],
+  "author": {
+    "email": "dev@lgbt.sh",
+    "name": "ly-nld",
+    "url": "https://lgbt.sh"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.3"
+  },
+  "devDependencies": {
+    "@types/eslint": "^8.56.0",
+    "@typescript-eslint/eslint-plugin": "^6.16.0",
+    "@typescript-eslint/parser": "^6.16.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "lint-staged": "^15.2.0",
+    "node": "^21.2.0",
+    "prettier": "^3.1.1",
+    "tslib": "^2.6.2",
+    "typedoc": "^0.25.4"
+  }
+}

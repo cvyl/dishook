@@ -1,0 +1,5 @@
+node_modules
+test.ts
+.gitignore
+.github
+.eslintrc.json
