@@ -1,6 +1,6 @@
 import { Embed, Webhook } from './src'
 
-const hook = new Webhook('https://discord.com/api/webhooks/1190087534009663588/btLQkO8X0KuOI2ZwAKbA9boglM-YK3e5PKF_XX3fJar6rty23IUZuSyETiTQncXzxCCY')
+const hook = new Webhook('WEBHOOK_HERE')
 
 const embed = new Embed()
 
