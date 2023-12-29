@@ -8,7 +8,12 @@ const embed = new Embed()
 embed
 	.setTitle('Hello, world!')
 	.setDescription('This is a description')
-//.setColor(0x00ff00)
+	.setURL('https://google.com')
+	.setColor(0x00ff00)
+	.setFooter({
+		text: 'This is a footer',
+		icon_url: 'https://google.com',
+	})
 	.setTimestamp()
 	.addField({
 		name: 'Field 1',
@@ -17,5 +22,10 @@ embed
 	})
 
 hook.addEmbed(embed).send()
-//get information about the embed using our wrapper via hook.get(HERE)
-hook.get().then(console.log)
+
+hook
+	.setTTS(true)
+	.setContent('Hello, world!')
+	.setUsername('Webhook')
+	.setAvatarUrl('https://google.com')
+	.send()

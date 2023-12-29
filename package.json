@@ -1,23 +1,32 @@
 {
   "name": "@ly-nld/dishook",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Simple Discord Webhook Wrapper",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ly-nld/dishook.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ly-nld/dishook/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build:ts": "tsc --build",
     "build:docs": "typedoc --out docs src/index.ts",
-	"build:pack": "npm run build:ts && npm run build:docs && npm pack",
+    "build:pack": "npm run build:ts && npm run build:docs && npm pack",
     "build:all": "npm run build:ts && npm run build:docs",
-	"build": "npm run build:all && npm run build:pack",
+    "build": "npm run build:all && npm run build:pack",
     "lint": "eslint --ext .ts src",
     "lint:fix": "npm run lint -- --fix",
     "prettier": "prettier --write .",
-	"test:node": "node test/index.js",
-	"test:ts": "tsc --noEmit test.ts",
-	"test": "npm run test:node && npm run test:ts"
+    "test:node": "node test/index.js",
+    "test:ts": "tsc --noEmit test.ts",
+    "test": "npm run test:node && npm run test:ts"
   },
-
   "keywords": [
     "discord",
     "webhook",
@@ -45,6 +54,7 @@
     "lint-staged": "^15.2.0",
     "node": "^21.2.0",
     "prettier": "^3.1.1",
+    "readme-md-generator": "^1.0.0",
     "tslib": "^2.6.2",
     "typedoc": "^0.25.4"
   }
