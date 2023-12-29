@@ -22,7 +22,7 @@ npm run test
 
 Example usage
 ```ts
-import { Embed, Webhook } from './src'
+import { Embed, Webhook } from '@ly-nld/dishook'
 
 const hook = new Webhook('WEBHOOK_HERE')
 const embed = new Embed()
