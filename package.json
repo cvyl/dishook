@@ -26,9 +26,9 @@
     "test:node": "node test/index.js",
     "test:ts": "tsc --noEmit test.ts",
     "test": "npm run test:node && npm run test:ts",
-    "publish:npm": "npm version patch && npm run build:all && npm publish",
+    "publish:npm": "npm run build:all && npm publish",
     "publish:github": "npm run build:all && git add . && git commit -m \"[/] Publish\" && git push -u origin main",
-    "publish": "npm run publish:github && npm run publish:npm"
+    "publish": "npm run publish:github && npm version patch && npm run publish:npm"
   },
   "keywords": [
     "discord",
