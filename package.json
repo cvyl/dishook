@@ -1,13 +1,13 @@
 {
-  "name": "@ly-nld/dishook",
+  "name": "@cvyl/dishook",
   "version": "1.0.7",
   "description": "Simple Discord Webhook Wrapper",
   "repository": {
     "type": "git",
-    "url": "https://github.com/ly-nld/dishook.git"
+    "url": "https://github.com/cvyl/dishook.git"
   },
   "bugs": {
-    "url": "https://github.com/ly-nld/dishook/issues"
+    "url": "https://github.com/cvyl/dishook/issues"
   },
   "publishConfig": {
     "access": "public"
@@ -40,9 +40,9 @@
     "dishook"
   ],
   "author": {
-    "email": "dev@lgbt.sh",
-    "name": "ly-nld",
-    "url": "https://lgbt.sh"
+    "email": "cvyl@pm.me",
+    "name": "cvyl",
+    "url": "https://cvyl.me"
   },
   "license": "MIT",
   "dependencies": {
