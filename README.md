@@ -1,4 +1,4 @@
-# Welcome to @ly-nld/dishook 👋
+# Welcome to @cvyl/dishook 👋
 [![Version](https://img.shields.io/npm/v/@ly-nld/dishook.svg)](https://www.npmjs.com/package/@ly-nld/dishook)
 [![Documentation](https://img.shields.io/badge/documentation-yes-brightgreen.svg)](https://lgbt.sh/dishook/)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/ly-nld/dishook/graphs/commit-activity)
@@ -6,7 +6,7 @@
 
 > Simple Discord Webhook Wrapper
 
-### 🏠 [Homepage](https://github.com/ly-nld/dishook)
+### 🏠 [Homepage](https://github.com/cvyl/dishook)
 
 ## Install
 
@@ -52,6 +52,6 @@ hook
 	.setAvatarUrl('https://google.com')
 	.send()
 ```
-* Website: lgbt.sh
-* Github: [@ly-nld](https://github.com/ly-nld)
-* Issues: [issues page](https://github.com/ly-nld/dishook/issues).
+* Website: cvyl.me
+* Github: [@cvyl](https://github.com/cvyl)
+* Issues: [issues page](https://github.com/cvyl/dishook/issues).
